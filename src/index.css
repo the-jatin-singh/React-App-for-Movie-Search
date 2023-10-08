@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    
+    }
+
+body{
+    background: rgb(17,0,255);
+background: linear-gradient(90deg, rgba(17,0,255,0.05318624031643904) 0%, rgba(255,43,68,0.02517503583464631) 48%, rgba(252,206,255,0.12321425152092091) 100%);}
+
+.menu{
+    width: 30px;
+    display: none;
+}
+
+.links-container{
+    display: flex;
+    gap: 50px;
+}
+
+.nav-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px 120px;
+}
+
+.search-icon {
+    width: 40px;
+}
+
+.search-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 70px;
+}
+
+input{
+    background: white;
+    position:absolute;
+    width: 430px;
+    font-size: 20px;
+    padding: 10px 30px;
+    border: 1px solid rgba(0, 0, 0, 0.041);
+    border-radius: 70px;
+    outline: none;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.search-icon {
+    position: relative;
+    top: 1px;
+    right: -200px ;
+    border-radius: 50%;
+    transition:  0.3s;
+    cursor: pointer;
+}
+
+.search-icon:hover {
+    background-color: rgba(140, 140, 140, 0.033);
+    transition: 0.2s;
+}
+
+.poster {
+    height: 444px;
+    align-items: center;
+}
+
+/* ----------------------------------------------- */
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 10%;
+     
+}
+
+.movie-info{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: white;
+}
+.movie-info>p{
+    background-color: #00000065;
+    padding: 0 3px;
+}
+
+.movie-info>p:first-child{
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.logo{
+    cursor: pointer;
+}
+
+.title{
+    color: rgb(241, 241, 241);
+    position: relative;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    left: 10px;
+    bottom: 100px;
+    background-color: #00000093;
+    padding: 10px;
+}
+
+.element{
+    margin: 20px;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+    width: 300px;
+    height: 444px;
+}
+
+.element:hover{
+    cursor: pointer;
+}
+
+.footer-container{
+    position:fixed;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
+    -webkit-backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
+    height: 40px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-link {
+    letter-spacing:3px;
+    text-transform: uppercase;
+    font-size: 12px;
+    text-decoration: none;
+    color: white;
+    transition: 0.2s;
+}
+
+.footer-link:hover {
+    color: #1f1f1f;  
+}
+
+/* ------------------------------------------------------ */
+@media only screen and (max-width: 850px){
+    
+    .element{
+        margin: 20px;
+        overflow: hidden;
+        border-radius: 10px;
+        position: relative;
+        width: 230px;
+        height: 344px;
+    }
+
+    .title{
+        color: rgb(241, 241, 241);
+        position: relative;
+        font-size: 14px;
+        font-weight: 500;
+        text-transform: uppercase;
+        left: 10px;
+        bottom: 90px;
+        background-color: #00000065;
+        padding: 10px;
+    }
+    
+    .poster {
+        height: 344px;
+        align-items: center;
+    }
+
+    .movie-info{
+        font-size: 14px;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        color: white;
+    }
+
+    .footer-container{
+        height: 35px;
+
+    }
+    
+    .footer-link {
+        letter-spacing:3px;
+        text-transform: uppercase;
+        font-size: 11px;
+        text-decoration: none;
+        color: white;
+        transition: 0.2s;
+    }
+}
+
+
+
+@media only screen and (max-width: 675px) {
+
+    input{
+       
+        width: 300px;
+        font-size: 18px;
+    }
+    
+    .search-icon {
+        position: relative;
+        top: 1px;
+        right: -140px ;
+    }
+
+    .element{
+        width: 260px;
+        height: 400px;
+    }
+
+    .title{
+        font-size: 14px;
+        left: 10px;
+        bottom: 100px;
+    }
+    
+    .poster {
+        height: 400px;
+        align-items: center;
+    }
+
+    .movie-info{
+        font-size: 14px;
+        top: 15px;
+        left: 10px;
+    }
+
+    .links-container{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+
+    .nav-container{
+        margin: 20px 10%;
+    }
+    
+}
+
+@media only screen and (max-width: 426px) {
+    input{
+        width: 60%;
+    }
+    
+    .search-icon {
+        right: -48% ;
+    }
+
+}
