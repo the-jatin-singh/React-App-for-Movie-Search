@@ -5,7 +5,7 @@ import icon from './assets/icon.png';
 import Footer from './Footer';
 
 
-// https://www.omdbapi.com/?apikey=947bf7c0&t=batman
+// https://www.omdbapi.com/?apikey={your-key}&t=batman
 
 
 const App = () => {
@@ -28,7 +28,7 @@ const App = () => {
     useEffect(() => {
         
         setTimeout(()=>{
-            fetch(`https://www.omdbapi.com/?apikey=947bf7c0&s=${querry}`)
+            fetch(`https://www.omdbapi.com/?apikey={your-key}s=${querry}`)
             .then(res=>res.json())
             .then((data)=>{
                 if(data.Response == "False"){
